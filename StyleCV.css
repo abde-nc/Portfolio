@@ -1,0 +1,66 @@
+/*contenedor padre (marco)*/
+.div_padre {
+    width: 900px;     /*ancho parecido a una hoja*/
+    margin: 30px auto;      /*para centrar el marco*/
+    border: 1px solid #ccc;     /*borde para que se vea como un papel*/
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.div_horizontal {
+    background-color: #466697;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 150px;      /*altura de la div (para que sea horizontal)*/
+    margin-bottom: 20px;      /*separación con las columnas*/
+    padding: 10px 60px;     /*espacio 10px vertical y 60px horizontal*/
+}
+
+.div_horizontal img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /*para recortar sin estirar la imagen*/
+    object-position: center top; /*centra la imagen horizontalmente y enseña la parte de arriba */
+}
+
+.div_horizontal > div {
+    margin-left: 165px;
+    text-align: left;    
+}
+
+/*Contenedor de divs verticales*/
+.div_columnas {
+    display: flex;      /*para poner columnas lado a lado*/
+}
+
+.div_izquierda { 
+    background-color: #d8e1e8; 
+    width: 42%;
+    padding: 10px;      /*espacio interno*/
+}
+
+.div_izquierda ul li {
+    margin-bottom: 5px;     /* Espacio de 5px entre cada elemento */
+}
+
+.div_derecha { 
+    width: 70%;
+    margin-left: 25px;      /*margen con la columna de la izquierda*/
+}
+
+h2 {
+  background-color: #456699;
+  color: white;
+  padding: 4px 8px;     /*espacio alrededor del texto (4 vertical, 8 horizontal)*/
+  border-radius: 4px;     /*esquinas redondeadas*/
+  width: 85%;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li i {
+  color: #456699;   /* color de los iconos */
+}
